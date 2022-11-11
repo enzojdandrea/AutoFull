@@ -28,6 +28,7 @@ console.log(listaProductos);
         <div class="card-body carta-cuerpo">
             <h5 class="card-title carta-titulo">Card title</h5>
             <p class="card-text carta-texto">This is a longer card with supporting.</p>
+            <span>$3500</span>
             <input class="form-check-input carta-check" type="checkbox" value="" id="flexCheckDefault">
         </div>
     </div>
