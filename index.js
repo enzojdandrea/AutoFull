@@ -20,33 +20,20 @@ listaProductos.push(polarizado);
 // console.log("listaProductos");
 // console.log(listaProductos);
 
-produc.innerHTML+=`
-<div class="col div-carta">
-    <div class="card carta">
-        <img src="./assets/productos/creeled.jpg" class="card-img-top" alt="...">
-        <div class="card-body carta-cuerpo">
-            <h5 class="card-title carta-titulo">Card title</h5>
-            <p class="card-text carta-texto">This is a longer card with supporting.</p>
-            <span>$3500</span>
+listaProductos.forEach(element => {
+    produc.innerHTML+=`
+<div class="col" id="div-carta">
+    <div class="card" id="carta">
+        <img id="carta-img" src="${element.img}" alt="...">
+        <div class="card-body" id="carta-cuerpo">
+            <h5 class="card-title" id="carta-titulo">${element.titulo}</h5>
+            <p class="card-text" id="carta-texto">${element.desripcion}.</p>
+            <span id="carta-precio">$${element.precio}</span>
             <input class="form-check-input carta-check" type="checkbox" value="" id="flexCheckDefault">
         </div>
     </div>
 </div>
 `
+});
 
-
-
-
-// quiero agregar esto
-/* <div class="col div-carta">
-    <div class="card carta">
-        <img src="./assets/productos/creeled.jpg" class="card-img-top" alt="...">
-        <div class="card-body carta-cuerpo">
-            <h5 class="card-title carta-titulo">Card title</h5>
-            <p class="card-text carta-texto">This is a longer card with supporting.</p>
-            <span>$3500</span>
-            <input class="form-check-input carta-check" type="checkbox" value="" id="flexCheckDefault">
-        </div>
-    </div>
-</div> */
 
