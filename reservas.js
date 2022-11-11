@@ -24,8 +24,22 @@ listaProComprados.forEach(element => {
             `
         }
     })
-    
 });
+
+clien.innerHTML+=`
+    <div class="container text-center ">
+        <div class="row justify-content-center">
+            <div class="card text-bg-primary mb-3 col-3">
+                <div class="card-header">
+                    <h2 class="">Gracias <span class="span-cliente">${datosCliente[0]} ${datosCliente[1]}</span> por comprar nuestros productos.</h2>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">El Total de lo comprado es <span class="text-warning">$${tot}</span>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+`
 
 
 console.log(datosCliente);
