@@ -5,7 +5,7 @@ const sub=document.getElementById("sub");
 
 
 listaProductos.forEach(element => {
-    const titulo=element.titulo.replaceAll(" ","");
+    const titulo=element.codigo;
     produc.innerHTML+=`
 <div class="col" id="div-carta">
     <div class="card" id="carta">
@@ -36,15 +36,15 @@ sub.onclick=()=>{
     if(parseInt(nombre.length)>=4 && parseInt(apellido.length)>4 && parseInt(telefono.length)>8 && parseInt(auto.length)>4){
         const cliente =[nombre,apellido,telefono,auto];
         listaProductos.forEach(e => {
-            if(document.getElementById(`${e.titulo.replaceAll(" ","")}`).checked){
-                listaCompra.push(e.titulo.replaceAll(" ",""));
-                document.getElementById(`${e.titulo.replaceAll(" ","")}`).checked=false;
+            if(document.getElementById(`${e.codigo}`).checked){
+                listaCompra.push(e.codigo);
+                document.getElementById(`${e.codigo}`).checked=false;
             }
         });
         console.log(cliente);
         console.log(listaCompra);
         localStorage.setItem("cliente",JSON.stringify(cliente));
-        localStorage.setItem("listaComplas",JSON.stringify(listaCompra));
+        localStorage.setItem("listaCompras",JSON.stringify(listaCompra));
         window.open("./reservacion.html","_self")    
     }else{
         alert("Debe completar todos los campos")
