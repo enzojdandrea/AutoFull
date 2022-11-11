@@ -1,0 +1,13 @@
+.navbar-img{
+    width: 10%;
+}
+.seccion{
+    display: grid;
+    /* grid-template-rows: repeat(2,1fr); */
+    padding: 50px 20px;
+    background-image: url("./assets/img/pexels-photo-3136673.jpeg");
+    background-repeat: no-repeat; /* valor por defecto*/
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
