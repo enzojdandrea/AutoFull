@@ -36,4 +36,8 @@ listaProductos.forEach(element => {
 `
 });
 
-
+sub.onclick=()=>{
+    const formulario=document.getElementById("formulario");
+    console.log(formulario)
+    // window.open("./reservacion.html")    
+}

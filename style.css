@@ -1,7 +1,7 @@
 .navbar-img{
     width: 10%;
 }
-.seccion{
+.main{
     display: grid;
     /* grid-template-rows: repeat(2,1fr); */
     padding: 50px 20px;

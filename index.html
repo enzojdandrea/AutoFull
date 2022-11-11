@@ -18,14 +18,14 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
                       </li>
-                    </ul>
+                    </ul> -->
                     <form class="d-flex" role="search">
                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                       <button class="btn btn-outline-success" type="submit">Search</button>
@@ -34,8 +34,8 @@
                 </div>
               </nav>
         </header>
-        <main>
-            <section class="seccion">
+        <main class="main ">
+            <section class="">
               <div class="row m-3 text-center">
                 <h3 class="text-danger">Elije los <span class="text-primary">Productos</span>, pon tus datos y reserva tu dia y horario </h3>
               </div>
@@ -57,12 +57,12 @@
               </div>
               
               <div class="row m-5">
-                <form class="formulario" action="">
+                <form id="formulario" action="">
                   <input class="form-control m-1" type="text" id="form_nombre" placeholder="Nombre" aria-label="default input example">
                   <input class="form-control m-1" type="text" id="form_apellido" placeholder="Apellido" aria-label="default input example">
                   <input class="form-control m-1" type="text" id="form_telefono" placeholder="Telefono" aria-label="default input example">
                   <input class="form-control m-1" type="text" id="form_auto" placeholder="Auto" aria-label="default input example">
-                  <button type="submit" class="btn btn-primary m-1 sub">Reservar</button>
+                  <button type="button" class="btn btn-primary m-1" id="sub">Reservar</button>
                 </form>
               </div>                
             </section>
