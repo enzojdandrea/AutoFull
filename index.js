@@ -1,43 +1,56 @@
-const listaProductos=[];
+
 const produc=document.getElementById("productos");
 const sub=document.getElementById("sub");
-class producto{
-    constructor(titulo,desripcion,precio,img){
-        this.titulo=titulo;
-        this.desripcion=desripcion;
-        this.precio=precio;
-        this.img=img;
-    }
-}
-const creeLed=new producto("Cree Leed","Luz blanca de alta potencia","2500","./assets/productos/creeled.jpg");
-listaProductos.push(creeLed);
-const cubreAuto=new producto("Cubre Auto","Cobertor de Auto","10000","./assets/productos/cubreautos.jpg");
-listaProductos.push(cubreAuto);
-const fundaAcientos=new producto("Funda Aciento","Funda de Aciento simil cuero","3500","./assets/productos/fundaacientos.jpg");
-listaProductos.push(fundaAcientos);
-const polarizado=new producto("Plarizado","Lamina de alta calidad para proteccion solar","3000","./assets/productos/polarizados.jpg");
-listaProductos.push(polarizado);
-// console.log("listaProductos");
-// console.log(listaProductos);
+
+
 
 listaProductos.forEach(element => {
+    const titulo=element.titulo.replaceAll(" ","");
     produc.innerHTML+=`
 <div class="col" id="div-carta">
     <div class="card" id="carta">
-        <img id="carta-img" src="${element.img}" alt="...">
+        <img class="card-img" id="carta-img" src="${element.img}" alt="...">
         <div class="card-body" id="carta-cuerpo">
             <h5 class="card-title" id="carta-titulo">${element.titulo}</h5>
             <p class="card-text" id="carta-texto">${element.desripcion}.</p>
             <span id="carta-precio">$${element.precio}</span>
-            <input class="form-check-input carta-check" type="checkbox" value="" id="flexCheckDefault">
+            <input class="form-check-input carta-check" type="checkbox" value="" id="${titulo}">
         </div>
     </div>
 </div>
 `
 });
 
+
+
 sub.onclick=()=>{
-    const formulario=document.getElementById("formulario");
-    console.log(formulario)
-    // window.open("./reservacion.html")    
+    const formNombre=document.getElementById("form_nombre");
+    const formApellido=document.getElementById("form_apellido");
+    const formTelefono=document.getElementById("form_telefono");
+    const formAuto=document.getElementById("form_auto");
+    const nombre = formNombre.value;
+    const apellido = formApellido.value;
+    const telefono = formTelefono.value;
+    const auto = formAuto.value;
+    const listaCompra=[];
+    if(parseInt(nombre.length)>=4 && parseInt(apellido.length)>4 && parseInt(telefono.length)>8 && parseInt(auto.length)>4){
+        const cliente =[nombre,apellido,telefono,auto];
+        listaProductos.forEach(e => {
+            if(document.getElementById(`${e.titulo.replaceAll(" ","")}`).checked){
+                listaCompra.push(e.titulo.replaceAll(" ",""));
+                document.getElementById(`${e.titulo.replaceAll(" ","")}`).checked=false;
+            }
+        });
+        console.log(cliente);
+        console.log(listaCompra);
+        localStorage.setItem("cliente",JSON.stringify(cliente));
+        localStorage.setItem("listaComplas",JSON.stringify(listaCompra));
+        window.open("./reservacion.html","_self")    
+    }else{
+        alert("Debe completar todos los campos")
+    }
+    formNombre.value="";
+    formApellido.value="";
+    formTelefono.value="";
+    formAuto.value="";   
 }
