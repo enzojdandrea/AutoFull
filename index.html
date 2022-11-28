@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AutoFULL</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg bg-dark">
-              <div class="container">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="./index.html"><img class="navbar-img" src="./assets/img/default-logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoFULL</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img class="navbar-img" src="./assets/img/default-logo.png"alt=""></a>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -27,40 +34,46 @@
                       <a class="nav-link" href="#">Link</a>
                     </li>
                   </ul> -->
-                  <!-- <form class="d-flex" role="search">
+            <!-- <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>
                   </form> -->
-                </div>
-              </div>
-              </div>  
-            </nav>
-        </header>
-        <main class="main ">
-            <section class="container">
-              <div class="row m-3 text-center">
-                <h1 class="text-danger">Elige los <span class="text-primary">Productos</span>, pon tus datos y reserva tu dia y horario </h1>
-              </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main ">
+    <section class="container">
+      <div class="row m-3 text-center">
+        <h1 class="text-danger">Elige los <span class="text-primary">Productos</span>, pon tus datos y reserva tu dia y
+          horario </h1>
+      </div>
 
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" id="productos">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" id="productos">
 
-              </div>
-              
-              <div class="row m-5">
-                <form id="formulario" action="">
-                  <input class="form-control m-1" type="text" id="form_nombre" placeholder="Nombre" aria-label="default input example">
-                  <input class="form-control m-1" type="text" id="form_apellido" placeholder="Apellido" aria-label="default input example">
-                  <input class="form-control m-1" type="text" id="form_telefono" placeholder="Telefono" aria-label="default input example">
-                  <input class="form-control m-1" type="text" id="form_auto" placeholder="Auto" aria-label="default input example">
-                  <button type="button" class="btn btn-primary m-1" id="sub">Reservar</button>
-                </form>
-              </div>                
-            </section>
-        </main>
-        <footer>
-           
-        </footer>
-        <script src="./productos.js"></script>
-        <script src="./index.js"></script>
-    </body>
+      </div>
+
+      <div class="row m-5">
+        <form id="formulario" action="">
+          <input class="form-control m-1" type="text" id="form_nombre" placeholder="Nombre"
+            aria-label="default input example">
+          <input class="form-control m-1" type="text" id="form_apellido" placeholder="Apellido"
+            aria-label="default input example">
+          <input class="form-control m-1" type="text" id="form_telefono" placeholder="Telefono"
+            aria-label="default input example">
+          <input class="form-control m-1" type="text" id="form_auto" placeholder="Auto"
+            aria-label="default input example">
+          <button type="button" class="btn btn-primary m-1" id="sub">Reservar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+  <script src="./productos.js"></script>
+  <script src="./index.js"></script>
+</body>
+
 </html>
