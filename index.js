@@ -1,12 +1,12 @@
 
-const produc=document.getElementById("productos");
-const sub=document.getElementById("sub");
+const produc = document.getElementById("productos");
+const sub = document.getElementById("sub");
 
-const mostrarProductos = async ()=>{
+const mostrarProductos = async () => {
     const productosfetch = await fetch("productos.json");
     const productosJSON = await productosfetch.json();
     productosJSON.forEach(element => {
-        produc.innerHTML+=`
+        produc.innerHTML += `
     <div class="col" id="div-carta">
         <div class="card" id="carta">
             <img class="card-img" id="carta-img" src="${element.img}" alt="...">
@@ -25,39 +25,39 @@ const mostrarProductos = async ()=>{
 mostrarProductos();
 
 
-sub.onclick=()=>{
-    const formNombre=document.getElementById("form_nombre");
-    const formApellido=document.getElementById("form_apellido");
-    const formTelefono=document.getElementById("form_telefono");
-    const formAuto=document.getElementById("form_auto");
+sub.onclick = () => {
+    const formNombre = document.getElementById("form_nombre");
+    const formApellido = document.getElementById("form_apellido");
+    const formTelefono = document.getElementById("form_telefono");
+    const formAuto = document.getElementById("form_auto");
     const nombre = formNombre.value;
     const apellido = formApellido.value;
     const telefono = formTelefono.value;
     const auto = formAuto.value;
-    const listaCompra=[];
-    
-    if(parseInt(nombre.length)>=4 && parseInt(apellido.length)>4 && parseInt(telefono.length)>8 && parseInt(auto.length)>4){
-        const cliente =[nombre,apellido,telefono,auto];
-        const comprar = async ()=>{
+    const listaCompra = [];
+
+    if (parseInt(nombre.length) >= 4 && parseInt(apellido.length) > 4 && parseInt(telefono.length) > 8 && parseInt(auto.length) > 4) {
+        const cliente = [nombre, apellido, telefono, auto];
+        const comprar = async () => {
             const productosfetch = await fetch("productos.json");
             const productosJSON = await productosfetch.json();
             productosJSON.forEach(e => {
-                if(document.getElementById(`${e.codigo}`).checked){
+                if (document.getElementById(`${e.codigo}`).checked) {
                     listaCompra.push(e.codigo);
-                    document.getElementById(`${e.codigo}`).checked=false;
+                    document.getElementById(`${e.codigo}`).checked = false;
                 }
             });
-            localStorage.setItem("cliente",JSON.stringify(cliente));
-            localStorage.setItem("listaCompras",JSON.stringify(listaCompra));
-            window.open("./reservacion.html","_self")    
+            localStorage.setItem("cliente", JSON.stringify(cliente));
+            localStorage.setItem("listaCompras", JSON.stringify(listaCompra));
+            window.open("./reservacion.html", "_self")
         }
-        comprar();        
-    }else{
+        comprar();
+    } else {
         alert("Debe completar todos los campos")
     }
-    formNombre.value="";
-    formApellido.value="";
-    formTelefono.value="";
-    formAuto.value="";   
+    formNombre.value = "";
+    formApellido.value = "";
+    formTelefono.value = "";
+    formAuto.value = "";
 }
 

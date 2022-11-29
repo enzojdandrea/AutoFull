@@ -1,44 +1,44 @@
 [
     {
-        "titulo":"Cree Leed",
-        "descripcion":"Luz blanca de alta potencia",
-        "precio":2500,
-        "img":"./assets/productos/creeled.jpg",
-        "codigo":"creeled"
+        "titulo": "Cree Leed",
+        "descripcion": "Luz blanca de alta potencia",
+        "precio": 2500,
+        "img": "./assets/productos/creeled.jpg",
+        "codigo": "creeled"
     },
     {
-        "titulo":"Cubre Auto",
-        "descripcion":"Cobertor de Auto",
-        "precio":9000,
-        "img":"./assets/productos/cubreautos.jpg",
-        "codigo":"cubreauto"
+        "titulo": "Cubre Auto",
+        "descripcion": "Cobertor de Auto",
+        "precio": 9000,
+        "img": "./assets/productos/cubreautos.jpg",
+        "codigo": "cubreauto"
     },
     {
-        "titulo":"Funda Aciento",
-        "descripcion":"Funda de Aciento simil cuero",
-        "precio":3500,
-        "img":"./assets/productos/fundaacientos.jpg",
-        "codigo":"fundaaciento"
+        "titulo": "Funda Aciento",
+        "descripcion": "Funda de Aciento simil cuero",
+        "precio": 3500,
+        "img": "./assets/productos/fundaacientos.jpg",
+        "codigo": "fundaaciento"
     },
     {
-        "titulo":"Plarizado",
-        "descripcion":"Lamina de alta calidad para proteccion solar",
-        "precio":3000,
-        "img":"./assets/productos/polarizados.jpg",
-        "codigo":"polarizado"
+        "titulo": "Plarizado",
+        "descripcion": "Lamina de alta calidad para proteccion solar",
+        "precio": 3000,
+        "img": "./assets/productos/polarizados.jpg",
+        "codigo": "polarizado"
     },
     {
-        "titulo":"Nuevo 1",
-        "descripcion":"Nuevo 1 Nuevo 1 Nuevo 1 Nuevo 1 Nuevo 1",
-        "precio":300,
-        "img":"https://picsum.photos/100/200",
-        "codigo":"Nuevo1"
+        "titulo": "Nuevo 1",
+        "descripcion": "Nuevo 1 Nuevo 1 Nuevo 1 Nuevo 1 Nuevo 1",
+        "precio": 300,
+        "img": "https://picsum.photos/100/200",
+        "codigo": "Nuevo1"
     },
     {
-        "titulo":"Nuevo 2",
-        "descripcion":"Nuevo 2 Nuevo 2 Nuevo 2 Nuevo 2 Nuevo 2",
-        "precio":5600,
-        "img":"https://picsum.photos/100/200",
-        "codigo":"Nuevo2"
+        "titulo": "Nuevo 2",
+        "descripcion": "Nuevo 2 Nuevo 2 Nuevo 2 Nuevo 2 Nuevo 2",
+        "precio": 5600,
+        "img": "https://picsum.photos/100/200",
+        "codigo": "Nuevo2"
     }
 ]

@@ -1,21 +1,24 @@
-.navbar-img{
+.navbar-img {
     width: 10%;
 }
-.main{
+
+.main {
     display: grid;
     /* grid-template-rows: repeat(2,1fr); */
     padding: 50px 20px;
     background-image: url("./assets/img/pexels-photo-3136673.jpeg");
-    background-repeat: no-repeat; /* valor por defecto*/
+    background-repeat: no-repeat;
+    /* valor por defecto*/
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
-.card-img{
+
+.card-img {
     margin: 0 auto;
     max-height: 300px;
 }
 
-.span-cliente{
+.span-cliente {
     color: rgb(10, 235, 47);
 }

@@ -1,21 +1,21 @@
-const produc=document.getElementById("productos");
-const clien=document.getElementById("cliente");
+const produc = document.getElementById("productos");
+const clien = document.getElementById("cliente");
 const listaProComprados = JSON.parse(localStorage.getItem("listaCompras"));
 const datosCliente = JSON.parse(localStorage.getItem("cliente"));
 
-let tot=0;
+let tot = 0;
 
 console.log(listaProComprados);
-const productosReservados = async ()=>{
+const productosReservados = async () => {
     const productosfetch = await fetch("productos.json");
     const productosJSON = await productosfetch.json();
     listaProComprados.forEach(element => {
-        productosJSON.forEach(e=>{
-            if(element===e.codigo){
+        productosJSON.forEach(e => {
+            if (element === e.codigo) {
                 console.log(e.codigo);
                 console.log(e.precio);
-                tot+=parseInt(e.precio);
-                produc.innerHTML+=`
+                tot += parseInt(e.precio);
+                produc.innerHTML += `
                 <div class="col" id="div-carta">
                     <div class="card" id="carta">
                         <img class="card-img" id="carta-img" src="${e.img}" alt="...">
@@ -29,7 +29,7 @@ const productosReservados = async ()=>{
         })
     });
 
-    clien.innerHTML+=`
+    clien.innerHTML += `
     <div class="container text-center ">
         <div class="row justify-content-center">
             <div class="card text-bg-primary mb-3 col-3">
