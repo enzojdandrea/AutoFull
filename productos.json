@@ -1,0 +1,30 @@
+[
+    {
+        "titulo":"Cree Leed",
+        "descripcion":"Luz blanca de alta potencia",
+        "precio":2500,
+        "imagen":"./assets/productos/creeled.jpg",
+        "codigo":"creeled"
+    },
+    {
+        "titulo":"Cubre Auto",
+        "descripcion":"Cobertor de Auto",
+        "precio":10000,
+        "imagen":"./assets/productos/cubreautos.jpg",
+        "codigo":"cubreauto"
+    },
+    {
+        "titulo":"Funda Aciento",
+        "descripcion":"Funda de Aciento simil cuero",
+        "precio":3500,
+        "imagen":"./assets/productos/fundaacientos.jpg",
+        "codigo":"fundaaciento"
+    },
+    {
+        "titulo":"Plarizado",
+        "descripcion":"Lamina de alta calidad para proteccion solar",
+        "precio":3000,
+        "imagen":"./assets/productos/polarizados.jpg",
+        "codigo":"polarizado"
+    }
+]
