@@ -53,7 +53,22 @@ sub.onclick = () => {
         }
         comprar();
     } else {
-        alert("Debe completar todos los campos")
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top',
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          })
+          
+          Toast.fire({
+            icon: 'error',
+            title: 'Debe completar todos los campos'
+          })
     }
     formNombre.value = "";
     formApellido.value = "";

@@ -5,15 +5,12 @@ const datosCliente = JSON.parse(localStorage.getItem("cliente"));
 
 let tot = 0;
 
-console.log(listaProComprados);
 const productosReservados = async () => {
     const productosfetch = await fetch("productos.json");
     const productosJSON = await productosfetch.json();
     listaProComprados.forEach(element => {
         productosJSON.forEach(e => {
             if (element === e.codigo) {
-                console.log(e.codigo);
-                console.log(e.precio);
                 tot += parseInt(e.precio);
                 produc.innerHTML += `
                 <div class="col" id="div-carta">
