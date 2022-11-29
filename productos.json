@@ -26,5 +26,19 @@
         "precio":3000,
         "img":"./assets/productos/polarizados.jpg",
         "codigo":"polarizado"
+    },
+    {
+        "titulo":"Nuevo 1",
+        "descripcion":"Nuevo 1 Nuevo 1 Nuevo 1 Nuevo 1 Nuevo 1",
+        "precio":300,
+        "img":"https://picsum.photos/100/200",
+        "codigo":"Nuevo1"
+    },
+    {
+        "titulo":"Nuevo 2",
+        "descripcion":"Nuevo 2 Nuevo 2 Nuevo 2 Nuevo 2 Nuevo 2",
+        "precio":5600,
+        "img":"https://picsum.photos/100/200",
+        "codigo":"Nuevo2"
     }
 ]

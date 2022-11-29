@@ -12,7 +12,7 @@ const mostrarProductos = async ()=>{
             <img class="card-img" id="carta-img" src="${element.img}" alt="...">
             <div class="card-body" id="carta-cuerpo">
                 <h5 class="card-title" id="carta-titulo">${element.titulo}</h5>
-                <p class="card-text" id="carta-texto">${element.desripcion}.</p>
+                <p class="card-text" id="carta-texto">${element.descripcion}.</p>
                 <span id="carta-precio">$${element.precio}</span>
                 <input class="form-check-input carta-check" type="checkbox" value="" id="${element.codigo}">
             </div>
